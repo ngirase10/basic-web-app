@@ -18,6 +18,10 @@ export default function QueryProcessor(query: string): string {
       "jn"
     );
   }
+  const name = query.match(/What is your name?/);
+  if (name) {
+    return "jn"
+  }
 
   const addMatch = query.match(/What is (\d+) plus (\d+)/);
   if (addMatch) {

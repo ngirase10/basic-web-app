@@ -27,9 +27,7 @@ describe("QueryProcessor", () => {
     });
 
     test('should return your name?', () => {
-        const query = "what is your name?";
-        const response: string = QueryProcessor(query);
-        expect(response).toBe(("jn"));
+        expect(QueryProcessor("What is your name?")).toEqual("jn");
     });
 
     test('should add numbers', () => {
